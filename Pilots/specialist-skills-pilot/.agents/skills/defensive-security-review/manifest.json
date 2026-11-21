@@ -1,0 +1,14 @@
+{
+  "skill": "defensive-security-review",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "36e9148a746b7b25857073f7652294e8859a88580296aabe1a6690228b32838e",
+    "references/05-security-architect.md": "5eae02dc3a3ebae8fbdcdd70e0e2b1787c0b7aef3e08d89eba8c5307b622d023",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/GOAL-AND-QUALITY.md": "b4e63b298b431bd6b0647f36ddd8f6769f58ccfe7af679665d67e3c26cbcb836",
+    "references/PEER-REVIEW.md": "3c7ca1b56bb4804c07dac86bc29b49b79f739350a819d38cb3c005a54b172156",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "07e56ce989f0be030eca02c00cfba3744e0e184847f838657c09cd3f7973741b"
+  }
+}

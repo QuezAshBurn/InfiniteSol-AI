@@ -1,0 +1,15 @@
+{
+  "skill": "data-contract-and-quality",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "3cde80664cc5adc0f9fb7787ee9a702dadf18bee6a6a90370f74f478633fb120",
+    "references/14-data-engineer.md": "c4e01253af503398111def0106dbf052b9d34134fe5038171f4c5b1ec05ab8e9",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/data-bi-contract.md": "ba004744377a9a471fd0ab31865b065ca0202df77d160704c7f36cefb1790da1",
+    "references/ENGINEERING-STANDARDS.md": "ffb840a49da84a1660c8807c99477d7cefad78918218b78ad683a6cd24db9df5",
+    "references/GOAL-AND-QUALITY.md": "b4e63b298b431bd6b0647f36ddd8f6769f58ccfe7af679665d67e3c26cbcb836",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "22b52c5db3e2fa3977640cf2ee4c68ba08fca0d72d78d6f3deeba7bcfdd37a12"
+  }
+}

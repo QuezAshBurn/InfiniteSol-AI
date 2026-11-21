@@ -1,0 +1,5 @@
+Fresh Codex evaluation by explicit installed skill path. Verified task-intake version 0.1.0, manifest SHA-256 758ce73cef1238e67667325af51b4f3e42a6180240912a2acab62b6e4d60301d, source pack 6278e4f6664daa97.
+
+INT-001 | AWAITING APPROVAL | T-001 has proposed scope and AUD 0 spend with no approval decision. The PM should log the request, draft the scoped Markdown authorization, and route the exact revision for approval.
+INT-002 | READY FOR PM DISPATCH | The delegated PM approval in approved/T-001.md revision A2 covers T-001 as described and is current at 10:30 AWST. The PM can dispatch to Developer A with independent QA verification under A2 before its 11:00 AWST expiry.
+INT-003 | BLOCKED | approved/T-001.md revision A2 expired at 10:00 AWST and no replacement exists at 10:30 AWST. The PM should obtain and record a current, scoped approval revision before dispatch.

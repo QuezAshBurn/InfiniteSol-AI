@@ -1,0 +1,8 @@
+Synthetic tabletop evaluation in a fresh Codex session using the installed SKILL.md by explicit file path. Native Codex CLI startup failed with Windows access denied.
+Skill qa-verify version 0.1.0. Verified manifest SHA-256 c49f21a72c13bfcb5d8197a44ee362ec848d6abdd9771a6c1572121faf72ad7f, source-pack fingerprint 6278e4f6664daa97.
+
+QA-001 | PASS | demo-r1 | Approval was current. The recorded baseline, developer tests and counterpart peer review support the handoff. Independent QA confirmed that Pending shows only pending orders and clearing the filter restores all orders. Send the recommendation to the PM for closure.
+QA-002 | RETURN FOR CORRECTION | demo-r1 | The baseline was recorded and Pending filtering passed. Clearing the filter removed pending orders from the unfiltered list. Developer A should fix the regression, then the developer, peer and QA should recheck both criteria on the corrected candidate.
+QA-003 | RETURN FOR CORRECTION | demo-r1 | Both functional criteria passed, but Developer A explicitly skipped the required pre-change snapshot. Redo the change from a documented pre-change baseline or ask the PM to obtain approval for a revised approach, then rerun affected checks.
+QA-004 | BLOCKED | demo-r2 | Developer tests, peer review and both QA results cover demo-r1 only. Obtain current developer and counterpart peer evidence, confirm the baseline applies, and independently rerun both criteria on demo-r2.
+QA-005 | BLOCKED | demo-r1 | SIM-QA-005 expired at 10:00 +08:00, before the 10:30 +08:00 evaluation. Stop verification. The PM should obtain renewed Markdown authorization before QA resumes and reruns affected checks.

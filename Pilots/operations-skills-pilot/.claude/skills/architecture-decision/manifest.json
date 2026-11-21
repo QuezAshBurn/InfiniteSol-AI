@@ -1,0 +1,17 @@
+{
+  "skill": "architecture-decision",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "db7a8802d2f899aea2f42431e1e1f0b10442306723f7eecc167bee7be1568f2e",
+    "references/03-solution-architect.md": "30700746e8c0f093fb84f413dd301d02996009a7f309ea5468dc4b5b6aebaa2e",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/architecture-brief.md": "7540cbc005967e04d117ad2327ac092e0df39458638eeca6e8deec16a43469a5",
+    "references/architecture-decision.md": "2b20c44615601631674fec4e6b61601ee63f8b0eb12f2a310e9776d7e9567497",
+    "references/COST-AND-OPEN-SOURCE.md": "0757242cf0f600bed91c48bee356404a84ae9d18c64e233197600904daadfbab",
+    "references/cost-plan.md": "c395721722ca4e5e0ed4182ed5eb298d425a192ba581a6648cc2204ab7f99c78",
+    "references/ENGINEERING-STANDARDS.md": "ffb840a49da84a1660c8807c99477d7cefad78918218b78ad683a6cd24db9df5",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "024fd4061c5e9f205dff4bca57891481f8c09106aeaa0086bf3a71c11ac2394e"
+  }
+}

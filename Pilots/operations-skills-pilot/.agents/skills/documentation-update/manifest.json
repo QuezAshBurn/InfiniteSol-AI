@@ -1,0 +1,15 @@
+{
+  "skill": "documentation-update",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "911ee3be06460401a2cac4c777a5d1046aa1fe466db31d32eb4f926b4e1928db",
+    "references/09-technical-writer.md": "2cf8b771dd25d1e6fb5f7e6fb5daad8af1678f3ce30d90a27ed337833427d348",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/ceo-update.md": "6f5895b4cbecc008c00deebc1b0b4ca5d2cee93588cb636d550b36472cec850e",
+    "references/document-register.md": "26b1ce881f6c859f7ca5155de9ca2cecb70a9f8b920154d0d67eba213bd9d042",
+    "references/PROJECT-DOCUMENTATION.md": "fdc4c36876e507b0410ba8f9798e143f8dca1353c28f4c0a18e17d7db0317ab2",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "dcbe505e63551b5b7d19b05826ff945e54ebeee6b92e05a7e22bcca6febac6cb"
+  }
+}

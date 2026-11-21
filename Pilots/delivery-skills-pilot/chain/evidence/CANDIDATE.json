@@ -1,0 +1,9 @@
+{
+  "candidate": "6da0f6734829acf9c727fb44921f25aaf1b3c03eae3bac9d581e9c1478e96f93",
+  "files": [
+    "src/orders.py",
+    "tests/test_orders.py"
+  ],
+  "hashRule": "SHA-256 over ordered path UTF-8, NUL, file bytes, NUL per file",
+  "storySha256": "cbd8c689e593aa70a00f33859c1f2efe48514b1dfeed663a69139774eaf0eff2"
+}

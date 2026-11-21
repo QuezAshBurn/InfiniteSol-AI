@@ -1,0 +1,18 @@
+Fresh Codex evaluation by explicit installed skill paths. Both v0.1.0 manifests verified against source pack 6278e4f6664daa97.
+qa-verify c49f21a72c13bfcb5d8197a44ee362ec848d6abdd9771a6c1572121faf72ad7f
+task-intake 758ce73cef1238e67667325af51b4f3e42a6180240912a2acab62b6e4d60301d
+
+QA-001 | PASS | demo-r1 has current scope, baseline, passing developer and counterpart review evidence and both independent QA criteria passed. PM owns closure.
+QA-002 | RETURN FOR CORRECTION | Clearing the filter hides pending orders. Developer A fixes the regression and reruns developer, peer and QA checks on the new candidate.
+QA-003 | RETURN FOR CORRECTION | Developer A skipped the required snapshot. Record the pre-change baseline before rework, then rerun the affected checks.
+QA-004 | BLOCKED | Developer, peer and independent QA evidence belongs to demo-r1 rather than submitted demo-r2. Obtain exact-candidate evidence.
+QA-005 | BLOCKED | SIM-QA-005 expired at 10:00 AWST before the 10:30 AWST evaluation. PM obtains current authorization.
+QA-006 | BLOCKED | Authoring session produced the QA evidence. PM assigns independent QA to rerun the checks.
+QA-007 | BLOCKED | Developer evidence for demo-r1 is missing. Author supplies exact-candidate evidence before QA resumes.
+QA-008 | BLOCKED | Required independent peer disposition is missing for demo-r1. PM secures a counterpart review on that candidate.
+INT-001 | AWAITING APPROVAL | No decision. PM logs the request and drafts the scoped authorization.
+INT-002 | READY FOR PM DISPATCH | Delegated approval A2 is current for the requested path, approach and AUD 0. PM may dispatch before expiry.
+INT-003 | BLOCKED | A2 expired at 10:00 AWST. PM obtains current authorization.
+INT-004 | BLOCKED | A2 covers docs/public/ and excludes docs/internal/. PM routes the correct scope for approval.
+INT-005 | BLOCKED | Developer A has no recorded delegation to approve. PM routes the decision to an authorised approver.
+INT-006 | BLOCKED | A2 authorizes AUD 0 and the request includes an AUD 45 purchase. Obtain a spending decision or rescope.

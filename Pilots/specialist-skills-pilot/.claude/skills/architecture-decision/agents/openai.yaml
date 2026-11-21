@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Decision"
+  short_description: "Prepare an evidenced architecture decision"
+  default_prompt: "Use $architecture-decision to assess the approved design scope and draft a decision for the PM."

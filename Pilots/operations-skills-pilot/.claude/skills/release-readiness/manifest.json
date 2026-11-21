@@ -1,0 +1,16 @@
+{
+  "skill": "release-readiness",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "018b8e0e8962e88b19eb8fb2820a5f4c79aebe9bea1eaa2fe830c3b05aba2276",
+    "references/13-deployment-engineer.md": "bfaa6bcce98146d6ab62dd30a18fa29faad640b545c9d720ff36578ad5f661b0",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/DELIVERY-ENVIRONMENTS.md": "26c401dbfc6a552c646505326f6cb97f45f6cb203a3c8e9dd3b4a17538925379",
+    "references/environment-promotion.md": "23b17af342caf32e0f0463e1c710150987d2a6cc8e3f79f6c2cf5e63287ae348",
+    "references/MAINTENANCE.md": "86972434410ae9419bea2fbba399cf1e100fef7ab831e9e1580109410dcfb3a1",
+    "references/release-runbook.md": "2289cdb9acf94528d32f5ebe751064d2b85fda1e9fd9952e9d475942024053b4",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "58c0f26e4f363a5a151c20443452996f88902e4f45c26b1c7f63caa7265f347f"
+  }
+}

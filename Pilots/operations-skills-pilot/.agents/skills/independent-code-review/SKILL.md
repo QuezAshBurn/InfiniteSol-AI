@@ -1,0 +1,10 @@
+---
+name: independent-code-review
+description: Review a frozen InfiniteSol code candidate as the PM-assigned independent counterpart. Use after developer tests to assess the exact diff and record an evidence-backed peer verdict.
+---
+
+1. Verify the installed package with `python scripts/verify_manifest.py EXPECTED_SHA256` or use same-run operator verification. Record its version, hash and source pack. Read [approved work](references/APPROVED-WORK.md), [peer review](references/PEER-REVIEW.md) and [goal and quality](references/GOAL-AND-QUALITY.md).
+2. Require a current authorised reviewer assignment, approved story and criteria, frozen baseline, exact candidate and actual diff, developer evidence, and technical change and documentation evidence. Confirm reviewer identity, session and runtime against the author. Use the other runtime for required counterpart review and a separate session without authorship of the change. Return BLOCKED for self-review, mismatched evidence, missing authority or incomplete inputs. In synthetic exercises judge the fixture's stated role assignments.
+3. Independently inspect the change against its requirement, correctness and failure behaviour, relevant security and data assumptions, regressions, scope and documentation. Perform only authorised read-only checks. Cite files and lines or observed outcomes. Distinguish tests you ran, developer-reported results and checks still missing.
+4. For each material finding, state severity, the failure and its impact, exact evidence and a focussed correction or verification step. Return CHANGES REQUIRED for an evidenced blocker. Return APPROVE only for the exact verified candidate with complete required evidence and no open blockers. Treat any changed revision as needing a fresh review.
+5. Record task, candidate, role, runtime, separate session, timestamp with zone, evidence, verdict and next owner. Send an approval to QA through the PM, a defect back to the author, or an unavailable review to the PM as a blocker. Keep the review read-only. Independent QA, business acceptance, closure and release stay with their existing owners.

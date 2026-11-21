@@ -1,0 +1,15 @@
+{
+  "skill": "positioning-brief",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "f6bc556a0a8fd8a9b63feafabf3ed0f4eed7bb4e9dfd6da2b56607e93559c39d",
+    "references/10-product-marketing-specialist.md": "d9e0610001c035ffa61e96559f21b4501a235c14eabd0e0631d00a982fd946fc",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/BUSINESS-OPERATIONS.md": "e887deb11d1c99908ff8cdb4927c45457dfafdcf7c93c2085480e341ee45bb59",
+    "references/COST-AND-OPEN-SOURCE.md": "0757242cf0f600bed91c48bee356404a84ae9d18c64e233197600904daadfbab",
+    "references/IMPROVEMENTS-AND-OPPORTUNITIES.md": "afbece5cc4d2266ece058e83263895568328aa1f31e34b0a632e8e48bbb7ea59",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "c3642e7e7db340c23993d0d291fba47a5f1d14f2361f615f68e9a3080f18ba4a"
+  }
+}

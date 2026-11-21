@@ -1,0 +1,75 @@
+{
+  "project": "nimbusflow-synthetic",
+  "snapshot": "memory-fixture-v1",
+  "records": [
+    {
+      "rule_id": "INVOICE.POD_REQUIRED",
+      "revision": "r1",
+      "kind": "default",
+      "tenant": null,
+      "overridable": true,
+      "source": "rules/invoice-shared.md",
+      "sha256": "ba89fc1140a402da7c616de0f2080931007b83bd19449ff7bc5e7f7b6d1d67c9",
+      "effective_from": "2026-11-20T00:00:00+08:00",
+      "effective_until": null,
+      "approval": {
+        "id": "SYN-DEC-001",
+        "status": "approved",
+        "revision": "r1",
+        "scope": "shared",
+        "source_sha256": "ba89fc1140a402da7c616de0f2080931007b83bd19449ff7bc5e7f7b6d1d67c9",
+        "approved_at": "2026-11-19T16:00:00+08:00",
+        "expires_at": null,
+        "path": "approvals/SYN-DEC-001.md",
+        "sha256": "de4d24ad07318a686e43c51186181d5b7ad8a4e8f1c8d1adb3650ce169a920e1",
+        "approver": "Synthetic business owner"
+      }
+    },
+    {
+      "rule_id": "INVOICE.POD_REQUIRED",
+      "revision": "r2",
+      "kind": "override",
+      "tenant": "tenant-a",
+      "overridable": false,
+      "source": "rules/invoice-tenant-a.md",
+      "sha256": "0263859d29579d9f3915f71104837aaa0a1998497c4bba9b804c71faa1ad896a",
+      "effective_from": "2026-11-20T00:00:00+08:00",
+      "effective_until": null,
+      "approval": {
+        "id": "SYN-DEC-002",
+        "status": "approved",
+        "revision": "r2",
+        "scope": "tenant-a",
+        "source_sha256": "0263859d29579d9f3915f71104837aaa0a1998497c4bba9b804c71faa1ad896a",
+        "approved_at": "2026-11-19T16:00:00+08:00",
+        "expires_at": null,
+        "path": "approvals/SYN-DEC-002.md",
+        "sha256": "2f2d485fdc7fdcedb4277e427a9d0dcdab7574ada6f52f4fb88cf68494e11244",
+        "approver": "Synthetic business owner"
+      }
+    },
+    {
+      "rule_id": "PLATFORM.TENANT_ISOLATION",
+      "revision": "r1",
+      "kind": "invariant",
+      "tenant": null,
+      "overridable": false,
+      "source": "rules/tenant-isolation.md",
+      "sha256": "35c139c0b83f8ceeac13df5dfb91617d6d2620a0c31f8cfb08c486ec2afed240",
+      "effective_from": "2026-11-20T00:00:00+08:00",
+      "effective_until": null,
+      "approval": {
+        "id": "SYN-DEC-003",
+        "status": "approved",
+        "revision": "r1",
+        "scope": "shared",
+        "source_sha256": "35c139c0b83f8ceeac13df5dfb91617d6d2620a0c31f8cfb08c486ec2afed240",
+        "approved_at": "2026-11-19T16:00:00+08:00",
+        "expires_at": null,
+        "path": "approvals/SYN-DEC-003.md",
+        "sha256": "3160e62b45851aa7ce960a1ba6aa09c61a706a14ebd01165c0fb7195c5f9cfa5",
+        "approver": "Synthetic business owner"
+      }
+    }
+  ]
+}

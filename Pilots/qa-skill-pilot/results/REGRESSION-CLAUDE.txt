@@ -1,0 +1,33 @@
+**Manifest:** qa-verify v0.1.0, manifest SHA-256 `c49f21a72c13bfcb5d8197a44ee362ec848d6abdd9771a6c1572121faf72ad7f`, source pack `6278e4f6664daa97`. This relies on the operator's recorded verification from this run. I did not rerun it. All judgments below are tabletop evidence based only on the supplied facts, at evaluation time 2026-11-20T10:30:00+08:00.
+
+QA-001 | PASS | Authorization was valid, and author, counterpart-runtime peer and QA were separate. Baseline, developer tests, peer review and both criteria pass on exact candidate demo-r1. Next: PM decides closure; business acceptance and release keep their existing owners.
+
+QA-002 | RETURN FOR CORRECTION | Regression found: clearing the filter drops pending orders from the unfiltered list, which fails criterion 2. Next: Developer A fixes it and submits a new revision. Then developer tests, peer review and full QA rerun on that revision.
+
+QA-003 | RETURN FOR CORRECTION | The required pre-change baseline snapshot was explicitly skipped, even though functional checks passed. Next: Developer A completes and records the required approach, or the PM gets an approved change to it. Affected peer review and QA then rerun.
+
+QA-004 | BLOCKED | Candidate demo-r2 has no evidence, because all developer, peer and QA evidence is for demo-r1 and is stale. Next: rerun developer tests, peer review and QA on demo-r2, or the PM confirms that demo-r1 is the candidate.
+
+QA-005 | BLOCKED | Authorization SIM-QA-005 expired at 10:00+08:00, before the 10:30 evaluation, so verification stops. Next: PM renews or reissues authorization, then QA reruns on demo-r1.
+
+QA-006 | BLOCKED | QA was assigned to Developer A in authoring session sim-author, so QA is not independent and the existing QA evidence is invalid. Next: PM assigns a separate QA, who reruns independent QA on demo-r1.
+
+QA-007 | BLOCKED | There are no developer test results or logs for demo-r1, so the entry check is missing. Next: Developer A supplies test evidence for demo-r1. QA then confirms the entry check and its evidence still applies.
+
+QA-008 | BLOCKED | The required peer review has no recorded disposition or evidence for demo-r1. Next: Developer B, as the counterpart-runtime peer, completes and records the review on demo-r1, then QA re-confirms.
+
+Manifest: task-intake v0.1.0, sha256 `758ce73cef1238e67667325af51b4f3e42a6180240912a2acab62b6e4d60301d` (source pack 6278e4f6664daa97). I used the verification you supplied and did not run `verify_manifest.py`. I read all three references.
+
+INT-001 | AWAITING APPROVAL | Request T-001 asks for 3 new fields (task, candidate revision, evidence owner) in `docs/internal/` while keeping the support checklist unchanged; author Developer A, verifier QA Engineer, AUD 0. No approval decision exists, so only the request is logged and a draft authorization is prepared, with status "Awaiting discovery approval". Next: PM sends the draft to the CEO or a delegated approver for a dated, revision-specific decision.
+
+INT-002 | READY FOR PM DISPATCH | `approved/T-001.md` rev A2 is a verified, current PM-issued approval under recorded CEO delegation. It covers the task, the `docs/internal/` path, the approach and AUD 0. It was recorded at 09:30 AWST and is valid until 11:00 AWST, and the evaluation time is 10:30 AWST. No other blockers are recorded. Next: PM dispatches to Developer A, with QA Engineer verifying, before 11:00 AWST. Dispatch stays with the PM, and a new approval is needed after expiry.
+
+INT-003 | BLOCKED | `approved/T-001.md` rev A2 expired at 10:00 AWST, before the 10:30 AWST evaluation, and no newer approval exists. Next: PM asks the CEO or delegate for a renewed approval revision with a new expiry before any work starts.
+
+INT-004 | BLOCKED | A2 is current and delegated, but it covers only `docs/public/` and explicitly excludes `docs/internal/`, the requested path. No replacement approval exists. Next: PM asks for a revised approval that covers `docs/internal/` for exactly these 3 fields.
+
+INT-005 | BLOCKED | A2 claims approval by Developer A, but there is no record that Developer A has delegated approval authority. Developer A is also the intended author, so they would be approving their own work. The approval is unsupported and authorizes nothing. Next: PM gets the approval from the CEO or a recorded delegate who is not the author.
+
+INT-006 | BLOCKED | The request includes a AUD 45 paid service purchase. A2 covers documentation only, sets new cash spend at AUD 0, and no spending approval exists. Next: PM either asks the CEO to approve the AUD 45, with the Solution Architect's cost and open-source plan and Finance validation, or rescopes the work to AUD 0 within A2.
+
+I didn't write anything, dispatch anything, grant any authority or approve any spending.

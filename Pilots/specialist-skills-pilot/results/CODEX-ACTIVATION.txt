@@ -1,0 +1,9 @@
+architecture-decision: native discovery PASS
+architecture-decision: selected skill body present in native model request (loopback, no model response).
+architecture-decision: bare dollar-name activated body
+database-change-review: native discovery PASS
+database-change-review: selected skill body present in native model request (loopback, no model response).
+database-change-review: bare dollar-name activated body
+defensive-security-review: native discovery PASS
+defensive-security-review: selected skill body present in native model request (loopback, no model response).
+defensive-security-review: bare dollar-name activated body

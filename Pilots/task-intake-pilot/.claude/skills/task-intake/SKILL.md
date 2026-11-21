@@ -1,0 +1,10 @@
+---
+name: task-intake
+description: Turn an InfiniteSol request into a project-manager intake record and proposed work authorization, or check whether an existing versioned approval covers dispatch. Use for new requests, story intake and authorization checks.
+---
+
+1. Read [approved work](references/APPROVED-WORK.md), [the PM role](references/01-project-manager.md) and [the authorization template](references/work-authorization.md). Verify the installed package with `python scripts/verify_manifest.py EXPECTED_SHA256` or use the operator's verification for this run. Record its version and hash. Return BLOCKED if installation verification fails or required references are absent.
+2. Preserve the request, existing ID and task references. Identify the requested outcome and measurable criteria, required approach, behaviour to preserve, owner, proposed assessor, and evidence of success. Mark unresolved details rather than inventing facts. Leave allocation of any new portfolio ID with the PM.
+3. Draft work authorization with proposed paths, actions, exclusions, expected deliverables, acceptance evidence, time and spend limits and decision owner. Use the existing authority and the $0 new cash spend default. The intake exception permits logging and drafting for a decision. Wait for approval before any discovery, triage, checks, or implementation.
+4. When an approval is supplied, verify the controlling Markdown location and exact revision, decision authority, status, dates and any timezone-specific expiry, action and path coverage, and applicable limits. A draft, missing approval, unsupported claim, or superseded version does not authorize execution.
+5. Return one intake disposition and a draft record or decision request. Use AWAITING APPROVAL when no decision exists, BLOCKED when approval or evidence is invalid or scope is unclear, and READY FOR PM DISPATCH only when the approved record covers the exact assignment. Include the approval or blocker and next owner. Preserve the PM's decision and portfolio-write responsibilities. Do not dispatch a task, grant authority, approve spending, or begin project work yourself.

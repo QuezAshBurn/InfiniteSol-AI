@@ -1,0 +1,4 @@
+interface:
+  display_name: "Defensive Security Review"
+  short_description: "Review defensive controls and exact evidence"
+  default_prompt: "Use $defensive-security-review to assess the scoped controls from supplied design, source, and verification evidence."

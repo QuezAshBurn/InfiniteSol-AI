@@ -1,0 +1,14 @@
+{
+  "skill": "database-change-review",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "5868b42c5a150642e9e7b6e790b6004a0e6a7245390a993274f60fb7e3e0b8cd",
+    "references/04-database-architect.md": "f5fff8a940976d9decc91c9fc41b5f43c6dd9564b1d54674eaa854398b49ed58",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/DELIVERY-ENVIRONMENTS.md": "26c401dbfc6a552c646505326f6cb97f45f6cb203a3c8e9dd3b4a17538925379",
+    "references/ENGINEERING-STANDARDS.md": "ffb840a49da84a1660c8807c99477d7cefad78918218b78ad683a6cd24db9df5",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "01aeac76554ef5c68ef2c164dc82aaa3d1a56606fcfed175dac9b48519734f35"
+  }
+}

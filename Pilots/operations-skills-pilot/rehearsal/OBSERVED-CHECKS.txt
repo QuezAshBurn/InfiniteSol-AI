@@ -1,0 +1,16 @@
+Started: 2026-11-20T12:06:11.8786804+08:00
+Finished: 2026-11-20T12:06:12.2056184+08:00
+Runtime: Python 3.14.7
+Working directory: rehearsal/
+Command: python -B check_operations.py
+Exit code: 0
+Independent Codex verifier recomputed the script and both report hashes and reran all checks on 20 November 2026.
+
+Script SHA-256 8aa2e867c865aa3e8a5db933a11fcfe08474998bb8ce22c9df4abb9d04dc7025
+PASS | tenant grain, repeated local ID, duplicate replay, latest correction and draft exclusion
+PASS | tenant reconciliation detected a planted swap that global totals could not detect
+PASS | conflicting latest and superseded revisions failed before report output
+PASS | synthetic cost forecast AUD 800, variance AUD -200 and downside AUD 900
+PASS | finance check isolated AUD 200 duplicated between actuals and commitments
+PASS | simulated Testing and Staging matched report artifact SHA-256 3dc2116f4ca142694e73bf293dca055a12deb47928ac597bc6b1565885fce070
+PASS | simulated operator handoff rejected a prior artifact approval

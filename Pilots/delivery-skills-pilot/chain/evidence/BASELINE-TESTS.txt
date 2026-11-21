@@ -1,0 +1,8 @@
+test_counts_legacy_pending_orders (test_orders.CountPendingTests.test_counts_legacy_pending_orders) ... ok
+test_empty_list (test_orders.CountPendingTests.test_empty_list) ... ok
+test_preserves_exact_status_matching (test_orders.CountPendingTests.test_preserves_exact_status_matching) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

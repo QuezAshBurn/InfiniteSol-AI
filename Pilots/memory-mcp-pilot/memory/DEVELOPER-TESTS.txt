@@ -1,0 +1,27 @@
+Runtime: Python 3.14.7
+Command: python -B -m unittest discover -s tests -v
+Exit code: 0
+
+test_approval_document_must_match_even_with_a_valid_hash (test_rule_memory.RuleMemoryTests.test_approval_document_must_match_even_with_a_valid_hash) ... ok
+test_changed_rule_body_is_unavailable (test_rule_memory.RuleMemoryTests.test_changed_rule_body_is_unavailable) ... ok
+test_conflicting_active_overrides_block_default (test_rule_memory.RuleMemoryTests.test_conflicting_active_overrides_block_default) ... ok
+test_conflicting_approval_source_link_blocks (test_rule_memory.RuleMemoryTests.test_conflicting_approval_source_link_blocks) ... ok
+test_conflicting_decision_lines_block (test_rule_memory.RuleMemoryTests.test_conflicting_decision_lines_block) ... ok
+test_denial_precedes_storage_lookup (test_rule_memory.RuleMemoryTests.test_denial_precedes_storage_lookup) ... ok
+test_draft_and_mismatched_approval_block_default (test_rule_memory.RuleMemoryTests.test_draft_and_mismatched_approval_block_default) ... ok
+test_effective_rules_match_tenant_and_approval (test_rule_memory.RuleMemoryTests.test_effective_rules_match_tenant_and_approval) ... ok
+test_expired_active_approval_blocks_default (test_rule_memory.RuleMemoryTests.test_expired_active_approval_blocks_default) ... ok
+test_invariant_cannot_be_overridden (test_rule_memory.RuleMemoryTests.test_invariant_cannot_be_overridden) ... ok
+test_missing_approval_is_unavailable (test_rule_memory.RuleMemoryTests.test_missing_approval_is_unavailable) ... ok
+test_missing_grant_is_denied (test_rule_memory.RuleMemoryTests.test_missing_grant_is_denied) ... ok
+test_one_tenants_unavailable_document_does_not_affect_the_other (test_rule_memory.RuleMemoryTests.test_one_tenants_unavailable_document_does_not_affect_the_other) ... ok
+test_override_effective_end_excluded (test_rule_memory.RuleMemoryTests.test_override_effective_end_excluded) ... ok
+test_override_effective_start_included (test_rule_memory.RuleMemoryTests.test_override_effective_start_included) ... ok
+test_platform_invariant_applies_to_both_tenants (test_rule_memory.RuleMemoryTests.test_platform_invariant_applies_to_both_tenants) ... ok
+test_snapshot_digest_remains_bound_after_change (test_rule_memory.RuleMemoryTests.test_snapshot_digest_remains_bound_after_change) ... ok
+test_unknown_rule_and_invalid_request_are_distinct (test_rule_memory.RuleMemoryTests.test_unknown_rule_and_invalid_request_are_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.745s
+
+OK

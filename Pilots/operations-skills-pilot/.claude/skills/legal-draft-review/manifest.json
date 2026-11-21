@@ -1,0 +1,15 @@
+{
+  "skill": "legal-draft-review",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "agents/openai.yaml": "86dbb404d8d8b6994479ddbd780975806b5b4ca66f0684681d0a9fa524eb5a6f",
+    "references/11-legal-research-and-drafting-agent.md": "2ad854924fa901f4ab6414b0619b2b78971f740f1df43281041abf3f0647824a",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/BUSINESS-OPERATIONS.md": "e887deb11d1c99908ff8cdb4927c45457dfafdcf7c93c2085480e341ee45bb59",
+    "references/COST-AND-OPEN-SOURCE.md": "0757242cf0f600bed91c48bee356404a84ae9d18c64e233197600904daadfbab",
+    "references/specialist-handoff.md": "7ec89e4ac4631ae119427ce5df321797ae987ecdfb0cad2776a9e306b9fe1a1f",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "3b647552b2be3935335b836df572e39a11242bfdd637e259aa1bf044375e1afb"
+  }
+}

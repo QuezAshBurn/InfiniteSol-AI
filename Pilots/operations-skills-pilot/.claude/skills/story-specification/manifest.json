@@ -1,0 +1,12 @@
+{
+  "skill": "story-specification",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "references/02-business-analyst.md": "438c3437bfe9997dd075b4ba1c643ba6f8ecf6f795c9fe964bf442cdaf2f030b",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/GOAL-AND-QUALITY.md": "b4e63b298b431bd6b0647f36ddd8f6769f58ccfe7af679665d67e3c26cbcb836",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "45ffc73eb6f9da54ba326cd3674f257b49dd487db0b3674c691f3981497927cb"
+  }
+}

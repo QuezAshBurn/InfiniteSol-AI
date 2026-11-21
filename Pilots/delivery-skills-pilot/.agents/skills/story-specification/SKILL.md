@@ -1,0 +1,10 @@
+---
+name: story-specification
+description: Turn an authorised InfiniteSol discovery handoff into a draft story with traceable business rules, exceptions and testable acceptance criteria. Use for Business Analyst work before implementation.
+---
+
+1. Check the installed skill with `python scripts/verify_manifest.py EXPECTED_SHA256` using the PM-provided digest, or use the operator's verification from this run. Stop with BLOCKED on a mismatch. Read [approved work](references/APPROVED-WORK.md), [business analyst role](references/02-business-analyst.md) and [goal and quality](references/GOAL-AND-QUALITY.md). Record the skill version, manifest hash and source-pack fingerprint.
+2. Require the project and request or task ID, the original request, scope and exact current Markdown approval for analysis, decision owner, and source evidence. If authority is absent, expired or outside scope, return BLOCKED before analysing. Intake logging and drafting authorization stay with the PM.
+3. Distinguish observed current behaviour, desired behaviour and undecided policy. Define user and outcome, rule IDs with sources, precedence, allowed scope, excluded scope, applicable constraints and behaviour to preserve. Escalate material ambiguity with concrete examples and options. Keep a contested rule out of the acceptance baseline and return BLOCKED when a decision is needed before the story is usable.
+4. Draft stable acceptance criterion IDs tied to the goal and rules. For each, state the setup, action, observable outcome and evidence to record. Cover the normal path and relevant negative, boundary and regression cases. Identify any required approach, integration or data constraint. Keep implementation choices outside the story unless already authorised as constraints.
+5. Return DRAFT FOR APPROVAL with the source and revision, open nonblocking items, and distinct implementation and QA handoffs, or BLOCKED with the missing evidence and named decision owner. Make drafting and execution boundaries explicit. Keep the story in draft until its exact revision is approved by the authorised owner.

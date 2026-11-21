@@ -1,0 +1,46 @@
+{
+  "model": "llama3.1:8b",
+  "date": "2026-11-21",
+  "passed": 6,
+  "total": 7,
+  "verdict": "FAIL \u2014 1 check(s) failed",
+  "results": [
+    {
+      "scenario": "S1 - Happy path: explicit yes, tool succeeds -> 'you're booked'",
+      "tool_calls": [
+        "check_availability",
+        "book_appointment"
+      ],
+      "final_text": "You're booked! Your haircut appointment is confirmed for next Friday at 3:30 PM. I've also sent you a booking reference (BK-001) and details of your appointment. I'm glad I could help you schedule your appointment. Is there anything else I can assist you with?",
+      "checks": {
+        "check_availability called": "PASS",
+        "book_appointment called": "PASS",
+        "says 'you're booked'": "PASS"
+      }
+    },
+    {
+      "scenario": "S2 - Ambiguous reply: not an explicit yes -> book_appointment NOT called",
+      "tool_calls": [
+        "check_availability",
+        "book_appointment"
+      ],
+      "final_text": "Sorry about that. It looks like there was an issue with the booking. The tool isn't available right now. Would you like to try another time slot or would you prefer to speak with someone to book your appointment?",
+      "checks": {
+        "book_appointment NOT called": "FAIL",
+        "does NOT say 'you're booked'": "PASS"
+      }
+    },
+    {
+      "scenario": "S3 - Tool failure: explicit yes, tool fails -> no 'you're booked'",
+      "tool_calls": [
+        "check_availability",
+        "book_appointment"
+      ],
+      "final_text": "Sorry to hear that the slot is no longer available. Let me see if there are any other options available next Friday. \n\n{\"name\": \"check_availability\", \"parameters\": {\"date_hint\":\"next Friday\",\"service\":\"haircut\"}}",
+      "checks": {
+        "book_appointment called": "PASS",
+        "does NOT say 'you're booked'": "PASS"
+      }
+    }
+  ]
+}

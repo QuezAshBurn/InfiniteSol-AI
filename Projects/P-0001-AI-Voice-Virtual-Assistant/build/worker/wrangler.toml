@@ -1,0 +1,26 @@
+name = "p0001-va"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Cloudflare D1 — tenant config, calendar, bookings, knowledge
+[[d1_databases]]
+binding = "DB"
+database_name = "p0001-va-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+# Cloudflare KV — session state (tenant_id:customer_phone)
+[[kv_namespaces]]
+binding = "KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Non-secret runtime vars
+[vars]
+WHATSAPP_VERIFY_TOKEN = "REPLACE_WITH_YOUR_VERIFY_TOKEN"
+
+# Secrets — set via: wrangler secret put <NAME>
+# WHATSAPP_APP_SECRET        — Meta app secret for HMAC-SHA256 webhook verification
+# WHATSAPP_ACCESS_TOKEN      — Meta Cloud API access token
+# GROQ_API_KEY               — Groq API key
+
+# Dev: wrangler dev --local --persist
+# Deploy: wrangler deploy

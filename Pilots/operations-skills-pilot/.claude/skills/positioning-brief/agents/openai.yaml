@@ -1,0 +1,4 @@
+interface:
+  display_name: "Positioning Brief"
+  short_description: "Draft positioning and evidence-backed claims"
+  default_prompt: "Use $positioning-brief for the scoped project task. Link the approved Markdown and actual evidence."

@@ -1,0 +1,35 @@
+from copy import deepcopy
+import unittest
+
+from src.orders import count_pending
+
+
+class CountPendingTests(unittest.TestCase):
+    def test_counts_legacy_pending_orders(self):
+        self.assertEqual(count_pending([{'status': 'pending'}]), 1)
+
+    def test_preserves_exact_status_matching(self):
+        self.assertEqual(count_pending([{'status': 'closed'}, {'status': 'Pending'}]), 0)
+
+    def test_empty_list(self):
+        self.assertEqual(count_pending([]), 0)
+
+    def test_excludes_archived_pending_orders(self):
+        orders = [{'status': 'pending', 'archived': True}, {'status': 'pending', 'archived': False}]
+        self.assertEqual(count_pending(orders), 1)
+
+    def test_all_archived_pending_orders(self):
+        self.assertEqual(count_pending([{'status': 'pending', 'archived': True}]), 0)
+
+    def test_legacy_pending_order_still_counts_in_mixed_list(self):
+        orders = [{'status': 'pending'}, {'status': 'pending', 'archived': True}]
+        self.assertEqual(count_pending(orders), 1)
+
+    def test_status_with_extra_whitespace_still_does_not_count(self):
+        self.assertEqual(count_pending([{'status': ' pending'}, {'status': 'pending '}]), 0)
+
+    def test_preserves_input_records(self):
+        orders = [{'status': 'pending', 'archived': True}, {'status': 'pending'}, {'status': 'closed'}]
+        original = deepcopy(orders)
+        count_pending(orders)
+        self.assertEqual(orders, original)

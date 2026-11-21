@@ -1,0 +1,15 @@
+Fresh separate Codex session. Verified the three installed v0.1.0 manifests and read the applicable reference packages. Source pack 6278e4f6664daa97.
+story-specification 952dfd1147fd5152539b6e8589c99a0fa5329b490cdb9e09b76b1abaeaad76b9
+implement-approved-story 6ebece90a48ff03bf76f8d90c655db604b4788e3c1b1d131bb9dbf81ff164d01
+independent-code-review 7ec3217f18921d1710f59f81f4136256b1b169315255a32b20842b918a8ca4d6
+
+SPEC-001 | DRAFT FOR APPROVAL | Current CEO discovery authorization permits scope, rule, and criteria drafting only.
+SPEC-002 | BLOCKED | Material contradictory archived counting rules need a recorded decision.
+SPEC-003 | BLOCKED | Discovery authorization expired before the evaluation.
+DEV-001 | READY TO IMPLEMENT | Exact author, story, baseline, two paths, and budget are covered by current dispatch; this is a read-only readiness check.
+DEV-002 | BLOCKED | No current development authorization.
+DEV-003 | RETURN FOR CORRECTION | Exact candidate fails legacy-order regression; repair and rerun developer tests before peer review.
+REV-001 | APPROVE | Independent counterpart reviewed exact C1; scope, diff and test evidence agree.
+REV-002 | BLOCKED | Same author and reviewer session violates separation.
+REV-003 | CHANGES REQUIRED | The diff counts archived pending orders, and the tests omit the failure.
+REV-004 | BLOCKED | Candidate C2 lacks exact authorization, diff and developer evidence; known evidence refers to C1.

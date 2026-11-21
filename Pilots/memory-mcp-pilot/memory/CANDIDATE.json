@@ -1,0 +1,16 @@
+{
+  "files": {
+    "rule_memory.py": "f4a51cad9c48e5d5a999192064a03008ad0ebc8ab902a91206141782244a20d3",
+    "demo.py": "900157883fc7053ff940d9961a7bf51df2e576f15298e0aeb29b2e7215f0599b",
+    "tests/test_rule_memory.py": "17238ab623eae3360cdfa5c1ad3a45f33caf43bc4f1bf2105c03a72b6b5d5819",
+    "snapshot/approvals/SYN-DEC-001.md": "de4d24ad07318a686e43c51186181d5b7ad8a4e8f1c8d1adb3650ce169a920e1",
+    "snapshot/approvals/SYN-DEC-002.md": "2f2d485fdc7fdcedb4277e427a9d0dcdab7574ada6f52f4fb88cf68494e11244",
+    "snapshot/approvals/SYN-DEC-003.md": "3160e62b45851aa7ce960a1ba6aa09c61a706a14ebd01165c0fb7195c5f9cfa5",
+    "snapshot/manifest.json": "baa7cf19c58515e17f6d4d95355acfe37466596c0832edbe04665f4290f40ad4",
+    "snapshot/rules/invoice-shared.md": "ba89fc1140a402da7c616de0f2080931007b83bd19449ff7bc5e7f7b6d1d67c9",
+    "snapshot/rules/invoice-tenant-a.md": "0263859d29579d9f3915f71104837aaa0a1998497c4bba9b804c71faa1ad896a",
+    "snapshot/rules/tenant-isolation.md": "35c139c0b83f8ceeac13df5dfb91617d6d2620a0c31f8cfb08c486ec2afed240"
+  },
+  "candidate_sha256": "fcb3cd28ffca8046a01d47f66eece989a924ad13da7900d4d99ec29722fb8a60",
+  "hash_rule": "SHA-256 of the sorted compact JSON mapping of relative POSIX paths to file SHA-256"
+}

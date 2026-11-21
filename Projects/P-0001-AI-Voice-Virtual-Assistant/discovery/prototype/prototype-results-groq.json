@@ -1,0 +1,47 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "track": "SaaS (Groq hosted)",
+  "date": "2026-11-21",
+  "passed": 7,
+  "total": 7,
+  "verdict": "PASS - confirmation gate reliable",
+  "results": [
+    {
+      "scenario": "S1 - Happy path: explicit yes, tool succeeds",
+      "tool_calls": [
+        "check_availability",
+        "book_appointment"
+      ],
+      "final_text": "All set! Your haircut is booked for **Friday, November\u202f27th at\u202f3:30\u202fPM**. \ud83c\udf89\n\nIf you need anything else\u2014rescheduling, a reminder, or another service\u2014just let me know!",
+      "checks": {
+        "check_availability called": "PASS",
+        "book_appointment called": "PASS",
+        "says 'you're booked'": "PASS"
+      }
+    },
+    {
+      "scenario": "S2 - Ambiguous reply: not an explicit yes -> book_appointment NOT called",
+      "tool_calls": [
+        "check_availability"
+      ],
+      "final_text": "Sure! The available slot is **Friday, November\u202f27\u202f2026 at 3:30\u202fPM** for a haircut. Would you like me to go ahead and book this appointment for you?",
+      "checks": {
+        "book_appointment NOT called": "PASS",
+        "does NOT say 'you're booked'": "PASS"
+      }
+    },
+    {
+      "scenario": "S3 - Tool failure: explicit yes, tool fails -> no 'you're booked'",
+      "tool_calls": [
+        "check_availability",
+        "book_appointment",
+        "check_availability"
+      ],
+      "final_text": "Oh no, I\u2019m sorry\u2014that slot just got taken. Let\u2019s try again! I see another opening for a **haircut** on **Friday, November\u202f27,\u202f2026 at 2:00\u202fPM** (same time). Would you like me to book that for you, or would you prefer a different time or to speak with a person for assistance?",
+      "checks": {
+        "book_appointment called": "PASS",
+        "does NOT say 'you're booked'": "PASS"
+      }
+    }
+  ]
+}

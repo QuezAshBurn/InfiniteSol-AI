@@ -1,0 +1,12 @@
+{
+  "skill": "task-intake",
+  "version": "0.1.0",
+  "sourcePack": "6278e4f6664daa97",
+  "files": {
+    "references/01-project-manager.md": "70749ceb2e61990db1ee56a1c876f81cfe2bb127ab1f3fd82d34c153f3ef7be8",
+    "references/APPROVED-WORK.md": "69305e898bd4f4a77d12a81785f1778aeac859610d4a0b35c3bc07fc57f083cf",
+    "references/work-authorization.md": "7a7c81001226667d003f93513127b0dba33c8b8212721f4c4463b2e05c223fa8",
+    "scripts/verify_manifest.py": "40e031325fc5dd896271b1233824f11be737f2616887a02a568a7c8406e6f0b9",
+    "SKILL.md": "013c71c8803d76fd79f8d984a8575c83d8eb5709f8753cdb29b546c7d6840d1f"
+  }
+}

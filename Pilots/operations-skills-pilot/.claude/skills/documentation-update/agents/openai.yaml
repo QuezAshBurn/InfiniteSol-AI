@@ -1,0 +1,4 @@
+interface:
+  display_name: "Documentation Update"
+  short_description: "Reconcile documentation with candidate evidence"
+  default_prompt: "Use $documentation-update for the scoped project task. Link the approved Markdown and actual evidence."

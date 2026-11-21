@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Contract And Quality"
+  short_description: "Verify data contracts and tenant-level quality"
+  default_prompt: "Use $data-contract-and-quality for the scoped project task. Link the approved Markdown and actual evidence."

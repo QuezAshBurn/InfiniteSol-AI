@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Readiness"
+  short_description: "Check exact-candidate release and support readiness"
+  default_prompt: "Use $release-readiness for the scoped project task. Link the approved Markdown and actual evidence."

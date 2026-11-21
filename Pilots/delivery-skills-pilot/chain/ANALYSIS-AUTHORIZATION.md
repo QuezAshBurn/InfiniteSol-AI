@@ -1,0 +1,3 @@
+# DEL-001 | Local pilot analysis authorization
+
+The user's 20 November 2026 instruction “Proceed with next to build” authorizes preparing and testing the three remaining InfiniteSol pilot skills. This local exercise uses that permission for discovery and drafting only in the isolated `delivery-skills-pilot` project. The exercise represents a synthetic product with no customer or Production data. BA work is bounded to an evidence-backed story derived from `REQUEST.md`. Before implementing, freeze and record the exact story and a separate scoped test work authorization. Approvals in all other fixtures are fictional.

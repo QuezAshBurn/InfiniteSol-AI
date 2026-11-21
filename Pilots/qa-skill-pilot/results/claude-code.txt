@@ -1,0 +1,18 @@
+**Skill path:** `C:\Users\emers\Documents\Codex\2026-11-19\new-chat\InfiniteSol AI\Projects\qa-skill-pilot\.claude\skills\qa-verify`
+
+**Manifest check (from the operator's record):** skill `qa-verify` ┬╖ version `0.1.0` ┬╖ manifestSha256 `c49f21a72c13bfcb5d8197a44ee362ec848d6abdd9771a6c1572121faf72ad7f` ┬╖ sourcePack `6278e4f6664daa97`.
+- The skill, version and sourcePack values match the installed `manifest.json`.
+- I did not recompute the hash, because you ruled out shell use. I'm relying on your verification for this run, as the skill permits.
+- I read all three reference files: GOAL-AND-QUALITY, APPROVED-WORK and PEER-REVIEW.
+
+**How these were judged:** all five fixtures are synthetic, judged only on the facts given in each file, at the fixture time 2026-11-20T10:30+08:00. In every fixture, Codex was the author, Claude Code was the peer reviewer (which meets the counterpart-runtime rule), and QA ran in its own session (separate from the author). I wrote nothing, ran no shell commands and used no other services.
+
+QA-001 | PASS | demo-r1 | SIM-QA-001 is valid at 10:30. The baseline was recorded. Developer tests and peer review passed on demo-r1. QA checked demo-r1 independently: the Pending filter passed, and clearing it showed the full list including pending orders. Next: PM decides closure; business acceptance and release keep their existing owners.
+
+QA-002 | RETURN FOR CORRECTION | demo-r1 | Criterion 1 (Pending filter) passed. Criterion 2 failed on demo-r1: after clearing the filter, pending orders were missing from the unfiltered list. This is a regression. Developer tests and peer approval don't override QA's result. Next: Developer A fixes it on a new revision, reruns developer tests and gets peer re-review. QA then reruns both criteria and the unfiltered-list regression check.
+
+QA-003 | RETURN FOR CORRECTION | demo-r1 | Both criteria passed on demo-r1, but the developer explicitly skipped the required pre-change baseline snapshot. Next: Developer A redoes the work with the baseline recorded first, as the PM directs. Peer review and QA then repeat their checks on the resulting revision.
+
+QA-004 | BLOCKED | demo-r2 | The candidate is demo-r2, but all the evidence (developer tests, peer review, QA) is for demo-r1. That evidence is stale and has to be discarded. Nothing has been verified on demo-r2. Next: Developer A provides developer tests on demo-r2, the peer re-reviews demo-r2, and QA reruns both criteria and the regression check on demo-r2.
+
+QA-005 | BLOCKED | demo-r1 | SIM-QA-005 expired at 10:00+08:00, before the 10:30 evaluation time. I stopped verification, and none of the demo-r1 evidence is accepted. Next: the PM gets a renewed, current authorization. QA then reruns all checks on demo-r1 within that approval window.

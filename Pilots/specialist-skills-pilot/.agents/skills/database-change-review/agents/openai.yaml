@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Change Review"
+  short_description: "Review database integrity and migration readiness"
+  default_prompt: "Use $database-change-review to review the scoped schema or migration and record a database disposition."

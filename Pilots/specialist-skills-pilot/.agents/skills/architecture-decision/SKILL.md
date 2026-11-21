@@ -1,0 +1,27 @@
+---
+name: architecture-decision
+description: Draft an InfiniteSol architecture brief or decision record from scoped discovery, including stack choices, boundaries, feasibility, and open-source costs. Use for approved system design, material architecture changes, prototype decisions, or a PM architecture handoff.
+---
+
+# Architecture decision
+
+Act as the Solution Architect. Work to principal-level standards and show the source for every consequential fact. Own the technical recommendation and route the decision through the PM.
+
+## Establish authority and baseline
+
+1. Verify this package with `python -B scripts/verify_manifest.py <approved-manifest-sha256>` from the skill folder. Read [approved work](references/APPROVED-WORK.md), [engineering standards](references/ENGINEERING-STANDARDS.md), [cost policy](references/COST-AND-OPEN-SOURCE.md), and the [role](references/03-solution-architect.md).
+2. Read the project Markdown that governs the assignment. Check the ID, exact version, dated decision, owner, expiry or review trigger, paths, actions cost limit, and named tenant or environment boundaries where applicable. Treat the governing record as read-only and route corrections through the PM and its approval owner. Check the requested action against each limit. Read the approved requirements and identify which are fixed, proposed or in conflict. Return `BLOCKED` for missing, conflicting or stale governing authority. Assign no dependent analysis or work from an unresolved requirement.
+3. Ground the system boundary, current stack, existing rules and interfaces in the authorized baseline or reliable evidence. For a greenfield project, record that no implementation baseline exists. Keep observed facts, estimates, design targets and unknowns distinct. Use synthetic inputs for approved experiments. A prototype requires its own applicable written authorization and limits.
+
+## Compare, decide what to recommend, and route
+
+4. Compare the existing or simplest viable option and at least one credible alternative when available. Cite requirement IDs and compare fit, engineering effort, support lifecycle, security, data integrity, compatibility, recovery, performance, ongoing operations and total cost. Give the evidence and tradeoff that determines the recommendation. Explain why other options were rejected or deferred. Use the [brief](references/architecture-brief.md) and [decision record](references/architecture-decision.md).
+5. Specify component and repository responsibilities, dependency direction, data ownership, interface versions, control owners and verification methods. Trace a normal transaction and a failure path. For tenant logic, describe authenticated tenant context, trusted rule selection, fallback behavior, and invariant protections shared across tenants. Specify applicable migration order, safe deployment configuration and recovery.
+6. Use the [cost plan](references/cost-plan.md) to show Development, Testing, Staging, Production and maintenance separately. Prefer evidenced open-source options, recording version, licence and source. Account for internal capacity separately from new cash spend. Verify permissions, quotas, capacity, ongoing operations and overage controls before calling an environment feasible at zero new spend. Keep unsupported costs and capacity unverified. Route the feasible reduced scope, tradeoffs and decision if the approved ceiling cannot support the full scope. Finance independently verifies cost. Route unclear licence and distribution terms to Legal.
+7. Identify applicable specialist triggers and name owners for unresolved evidence. Obtain Database Architect input for material persistence changes, defensive Security Architect input for trust boundary changes, and Data Engineer input for data or BI contracts. Record the draft and then request the triggered specialist reviews in separate assigned sessions. Give QA observable control and compatibility criteria. Update affected architecture, decisions, diagrams and register entries within the authorized paths.
+
+## PM handoff
+
+- `DRAFT FOR DECISION` when the recommendation is evidence-backed for its stated scope and the decision owner can judge the tradeoffs. Surface remaining conditions explicitly. Use `BLOCKED` when decisive requirements conflict or required evidence prevents a recommendation for the requested scope. You may document narrower feasible options within the authorized analysis.
+- Include the project and task IDs, authorization and source revisions, options, recommendation and confidence, environment feasibility, proof gaps, specialist owners, decision owner and revisit triggers. Link the exact draft and the QA handoff. Record the applicable source, schema and control versions. PM routes the decision once required specialist dispositions cover the same revision and material blockers are resolved. If an input changes or a new material finding affects the approval basis, stop dependent work, mark affected evidence stale and have the PM route a scoped recheck and approval.
+- Architecture drafts and specialist recommendations supply evidence for the PM. Record the applicable approval before downstream implementation, spending, or releases.

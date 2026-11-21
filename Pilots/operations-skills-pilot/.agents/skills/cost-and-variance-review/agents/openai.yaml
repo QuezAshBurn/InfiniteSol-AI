@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cost And Variance Review"
+  short_description: "Reconcile budget, forecast and no-charge evidence"
+  default_prompt: "Use $cost-and-variance-review for the scoped project task. Link the approved Markdown and actual evidence."

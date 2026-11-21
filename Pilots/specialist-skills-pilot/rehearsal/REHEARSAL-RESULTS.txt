@@ -1,0 +1,15 @@
+Recorded start: 2026-11-20T11:48:11.4855075+08:00
+Working directory: rehearsal/
+Command: python -B check_tenant_rules.py
+Exit code: 0
+SHA-256 below covers check_tenant_rules.py bytes.
+Independent Codex QA recomputed the same SHA-256 and reran all five checks on 20 November 2026.
+The single shared default is a code constant and occupies no database row.
+Fixture: 3 tenants; 2 legacy rows and 2 migrated rows after a successful run.
+
+SQLite 3.50.4 | foreign_keys=ON | candidate SHA-256 75db44471afa32a451589585c26667b054743a029e149e0fa61835e15db34b8b
+PASS | partial copy rolled back, legacy rows preserved
+PASS | retry and repeat preserved exact rows by tenant and both local ID 7 values
+PASS | existing overrides and authorized shared fallback
+PASS | absent or mismatched authorized context denied before database access
+PASS | isolated snapshot restore preserved exact legacy and migrated rows, lookups and tenant controls

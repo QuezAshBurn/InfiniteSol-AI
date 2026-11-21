@@ -1,0 +1,73 @@
+DOC-01 | READY | D1 is current and scoped to C1. Change records, independent QA and the runbook rehearsal match C1 and its configuration. All affected docs are updated, the old operator page is marked superseded, and the register and links are checked. Owner confirmation and exact-version procedure verification are recorded. Next: the PM verifies the CEO update and routes it; external publication needs separate authority.
+
+DOC-02 | CHANGES REQUIRED | Under D2, three documents are wrong. The guide says production is on C2, and the register and release notes call P2 successful. The deployment record and independent post-rollback checks show production is back on C1. Correction: record P2 as an attempted rollout that was rolled back. Set the guide, register and release notes to C1 as the verified state, keep the P2 history, and rerun the link, register and version checks. Next: the content owner confirms, then the PM.
+
+DOC-03 | BLOCKED | D3 requires the recovery guide for C3. The docs and rehearsal cover only C2, and C3 changed the procedure, so the candidates do not match. C3 owner confirmation and a verified C3 walkthrough are both missing. The guide stays in draft. Unblock: the owner confirms against C3 and the authorized verifier walks the C3 procedure or supplies exact C3 evidence. Next: the PM.
+
+DOC-04 | BLOCKED | D4 expired at 10:00 AWST, before the 11:00 AWST evaluation on 20 Nov 2026, and no replacement grant exists. The release deadline does not grant authority. Unblock: the PM obtains a current, dated, scoped grant covering the operator runbook update.
+
+LEG-01 | DRAFT FOR QUALIFIED REVIEW | L1 is current for Fictional Jurisdiction A. The fictional primary record A-14 Art 3 V2 is current and has effective and retrieval dates. The confirmed entity and transaction facts fit its scope. The interpretation question is flagged, and the reviewer and signatory routes are recorded. This disposition grants no signing or publishing authority. Next: the designated qualified reviewer, via the PM.
+
+LEG-02 | CHANGES REQUIRED | The draft states a 30-day requirement taken from superseded A-14 V1. Verified V2, in force for this project on the same confirmed facts, sets 14 days. Correction: change the draft to 14 days citing V2 with its effective and retrieval dates, keep a tracked record of the V1 version, and re-verify. Next: the PM, then the qualified reviewer.
+
+LEG-03 | BLOCKED | A final external terms release exceeds L3, which covers internal preparation only. The contracting entity, customer location and jurisdiction are unresolved. Designated qualified signoff and publication approval are both missing. Unblock: the PM confirms the entity and customer jurisdiction, then obtains qualified review, signatory signoff and publication authority. Internal drafting can continue.
+
+LEG-04 | BLOCKED | The controlling executed agreement is missing. The only copy is an unsigned draft that a recorded signature superseded, so it cannot support the determination. Unblock: the PM supplies the executed agreement from the authorized location, after which the review is rerun.
+
+Applied from the supplied packets only; no tools run, so manifest verification (`verify_manifest.py`) and reference files are **unverified** for all cases.
+
+**MKT-01 | DRAFT FOR REVIEW | decisive evidence and next gate**
+- Claim: only "reconciliation export" capability; "fewer manual steps" correctly held as hypothesis.
+- Observed capability: QA-verified export on C1.
+- Outcome measured: none yet; 5/8 convenience-sample interviews are a direct but non-representative problem signal, not willingness to pay (no pricing data).
+- Pilot is answerable: step count + completion vs manual baseline, success/stop thresholds, AUD 0 cap, draft-only within M1.
+- Next gate: PM review; outreach, consent, any spend and publication each need separate approval; add a pricing/WTP disconfirmation test.
+
+**MKT-02 | CHANGES REQUIRED | decisive evidence and next gate**
+- Claim: "cuts reconciliation time by 50% for every distributor" (quantitative, universal outcome claim).
+- Observed capability: export works on C2.
+- Outcome measured: one timed synthetic rehearsal, no manual baseline, no denominator, no population, so no comparison exists.
+- Action: remove the claim or narrow to the verified export capability; restate time saving as a hypothesis with comparator, denominator, window and method.
+- Next gate: measured baseline-vs-export comparison, then Legal substantiation review via PM.
+
+**MKT-03 | BLOCKED | decisive evidence and next gate**
+- Claim/capability/outcome: not at issue; the action is outreach.
+- Requested emailing exceeds M3 (draft plan only); no outreach approval, list permission/consent basis or approved message.
+- Unblock (PM): dated outreach approval covering that exact list, a documented permission basis, and an approved message. Until then, no emails sent.
+
+**MKT-04 | BLOCKED | decisive evidence and next gate**
+- Claim: "segmentation passed" is a supplied, unverified assertion; no sample, method or observations.
+- Observed capability: QA proves the feature works, which is capability, not demand.
+- Outcome measured: none for demand; decisive gate evidence absent.
+- Unblock (PM): supply the segmentation evidence (source, date, population/sample, method, observations, limitations) for review before any launch decision.
+
+**MKT-05 | CHANGES REQUIRED | decisive evidence and next gate**
+- Claim: headline "already makes the workflow simpler" is an implied comparative outcome claim.
+- Observed capability: exact C1 export test, capability only.
+- Outcome measured: eventual task completion only, which cannot test "fewer steps than current workflow" (no step counts, observation or baseline).
+- Action: reframe headline as a hypothesis; redesign to record observed step counts for export and current workflows on the same tasks, with denominator, thresholds, duration, owner and spend cap.
+- Next gate: PM review of the revised experiment draft.
+
+FIN-01 | VERIFIED FOR SCOPE | EAC = 300 incurred + (500 − 200) 300 outstanding + 200 forecast = 800. Variance is 800 − 1000 = −200 (under the cap). Downside is 800 + 100 = 900, still within 1000. This matches the model and covers the reconciliation scope only. Route via PM; no spend authority is implied.
+
+FIN-02 | CHANGES REQUIRED | Model double-counts the 200 overlap: 300 + 500 + 200 = 1000. Correct EAC = 300 + 300 + 200 = 800, variance −200, so the model is overstated by 200. Financial Analyst corrects and resubmits via PM.
+
+FIN-03 | BLOCKED | Production AUD 0 is unverified. The usage alert is notification only, and the plan documents automatic per-use billing beyond quota. No spending approval exists. PM must obtain an enforceable hard cap or stop control, reviewed with the Deployment Engineer, or a reduced scope, or separate CEO spend approval.
+
+FIN-04 | VERIFIED FOR SCOPE | Dev/Test only, AUD 0. Local capacity, permitted use, expiry and the peak-volume exercise evidence no external billing path. Staff time and shared equipment are recorded separately. Staging, Production and support remain unknown and excluded. PM decides next scope.
+
+REL-01 | READY FOR CEO DECISION | A1 provenance, Testing/Staging, QA, peer, specialist, docs, cost, promotion, rehearsed recovery and health, operator, backup, permissions and support are all evidenced. PM requests a dated CEO decision on exact A1, settings, target, window and operator.
+
+REL-02 | READY FOR AUTHORIZED OPERATOR | Current A2/K2 evidence is complete. The dated CEO decision matches A2, K2, Production, action, window and named operator, and permission is confirmed. Hand off via PM to the named operator; this review performs no deployment.
+
+REL-03 | BLOCKED | The CEO decision covers A1/K1, not A2/K2. A tag or green workflow is insufficient. PM must obtain a dated CEO decision for exact A2/K2, target, action, window and operator.
+
+REL-04 | CHANGES REQUIRED | Observed data-integrity verification failed after restore on exact A3, and recovery is open. The owning engineer fixes it, followed by fresh Staging recovery rehearsal and re-review via PM before any CEO request.
+
+DATA-01 | RECOMMEND DESIGN | Design mode. The owner-approved definition and contract D1 set the deal grain at tenant + local record ID. Fields, units, cutoff, versions and consumers are linked, and named owners/plans cover compatibility, replay, late corrections, access, retention and support. Nothing has been implemented or tested, so all validation results are unverified. Next gate: approved scope and dispatch for implementation, then exact-candidate evidence review.
+
+DATA-02 | RECOMMEND CANDIDATE | Exact-candidate mode on R1 against D2 (source, target, currency and cutoff matched). The supplied isolated synthetic checks confirm per-tenant source-to-report tie-out, cross-tenant local ID reuse, replay/late corrections, compatibility, tenant access, derived-output retention, freshness and recovery. This recommendation is scoped to R1 in the synthetic environment only. Next gate: the independent peer reviewer and QA run their separate gates. Any live job, backfill or production change needs separate authorization.
+
+DATA-03 | CHANGES REQUIRED | Proven metric failure on exact R2. The aggregate of 100 matches the source, but the tenant totals are swapped: observed A=35 and B=65 against approved A=65 and B=35. That breaks the required tenant scope and grain, and it may indicate a tenant attribution or isolation defect. Next gate: fix the tenant keying/attribution, rerun the per-tenant keyed tie-out on the new exact candidate, and involve Security on the isolation impact.
+
+DATA-04 | BLOCKED | The cutoff definition is unresolved: the BA and owner records conflict and no governing decision exists. The only evidence available is for R2, which does not apply to R3 with its changed schema and cutoff. Exact R3 quality and compatibility results are missing, and the incompatible schema change has no linked rollout plan on record. Unblock: the PM gets a governing cutoff decision from the business owner/BA. Then supply exact R3 quality, per-tenant reconciliation and compatibility results, with a compatibility and rollout plan.

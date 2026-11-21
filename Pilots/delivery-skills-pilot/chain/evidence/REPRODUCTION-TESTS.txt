@@ -1,0 +1,40 @@
+test_all_archived_pending_orders (test_orders.CountPendingTests.test_all_archived_pending_orders) ... FAIL
+test_counts_legacy_pending_orders (test_orders.CountPendingTests.test_counts_legacy_pending_orders) ... ok
+test_empty_list (test_orders.CountPendingTests.test_empty_list) ... ok
+test_excludes_archived_pending_orders (test_orders.CountPendingTests.test_excludes_archived_pending_orders) ... FAIL
+test_legacy_pending_order_still_counts_in_mixed_list (test_orders.CountPendingTests.test_legacy_pending_order_still_counts_in_mixed_list) ... FAIL
+test_preserves_exact_status_matching (test_orders.CountPendingTests.test_preserves_exact_status_matching) ... ok
+test_preserves_input_records (test_orders.CountPendingTests.test_preserves_input_records) ... ok
+test_status_with_extra_whitespace_still_does_not_count (test_orders.CountPendingTests.test_status_with_extra_whitespace_still_does_not_count) ... ok
+
+======================================================================
+FAIL: test_all_archived_pending_orders (test_orders.CountPendingTests.test_all_archived_pending_orders)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\emers\Documents\Codex\2026-11-19\new-chat\InfiniteSol AI\Projects\delivery-skills-pilot\chain\tests\test_orders.py", line 22, in test_all_archived_pending_orders
+    self.assertEqual(count_pending([{'status': 'pending', 'archived': True}]), 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_excludes_archived_pending_orders (test_orders.CountPendingTests.test_excludes_archived_pending_orders)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\emers\Documents\Codex\2026-11-19\new-chat\InfiniteSol AI\Projects\delivery-skills-pilot\chain\tests\test_orders.py", line 19, in test_excludes_archived_pending_orders
+    self.assertEqual(count_pending(orders), 1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+======================================================================
+FAIL: test_legacy_pending_order_still_counts_in_mixed_list (test_orders.CountPendingTests.test_legacy_pending_order_still_counts_in_mixed_list)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\emers\Documents\Codex\2026-11-19\new-chat\InfiniteSol AI\Projects\delivery-skills-pilot\chain\tests\test_orders.py", line 26, in test_legacy_pending_order_still_counts_in_mixed_list
+    self.assertEqual(count_pending(orders), 1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+FAILED (failures=3)

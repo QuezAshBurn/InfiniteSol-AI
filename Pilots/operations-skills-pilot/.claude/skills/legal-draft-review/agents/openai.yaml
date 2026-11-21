@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Draft Review"
+  short_description: "Review draft legal issues and source applicability"
+  default_prompt: "Use $legal-draft-review for the scoped project task. Link the approved Markdown and actual evidence."

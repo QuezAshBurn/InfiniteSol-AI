@@ -1,0 +1,13 @@
+test_all_archived_pending_orders (test_orders.CountPendingTests.test_all_archived_pending_orders) ... ok
+test_counts_legacy_pending_orders (test_orders.CountPendingTests.test_counts_legacy_pending_orders) ... ok
+test_empty_list (test_orders.CountPendingTests.test_empty_list) ... ok
+test_excludes_archived_pending_orders (test_orders.CountPendingTests.test_excludes_archived_pending_orders) ... ok
+test_legacy_pending_order_still_counts_in_mixed_list (test_orders.CountPendingTests.test_legacy_pending_order_still_counts_in_mixed_list) ... ok
+test_preserves_exact_status_matching (test_orders.CountPendingTests.test_preserves_exact_status_matching) ... ok
+test_preserves_input_records (test_orders.CountPendingTests.test_preserves_input_records) ... ok
+test_status_with_extra_whitespace_still_does_not_count (test_orders.CountPendingTests.test_status_with_extra_whitespace_still_does_not_count) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
