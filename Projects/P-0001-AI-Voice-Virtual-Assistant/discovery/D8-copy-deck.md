@@ -104,7 +104,9 @@ Where the LLM may vary the phrasing within the approved tone, the line is marked
 ### BOOKING_SUCCESS
 
 **[FIXED — do not vary until book_appointment returns {status: "success"}]**
-> "You're all set! Your [Service] is confirmed for [Day, Date] at [Time]. Is there anything else I can help you with?"
+> "You're all set! Your [Service] is confirmed for [Day, Date] at [Time]. Your booking reference is [booking_id]. Add to your calendar: [calendar_url]. Is there anything else I can help you with?"
+
+*[booking_id] and [calendar_url] come from book_appointment tool result. DEC-0013, DEC-0014.*
 
 *Intent:* Celebrate the booking warmly but briefly. Only say this after confirmed success. Never before.*
 
@@ -232,5 +234,5 @@ These distinctions are conveyed via the system prompt's tone section, which is t
 | ID | Question | Impact |
 |---|---|---|
 | OQ-D8-001 | ~~gateBooking() keywords are English-only~~ | **RESOLVED 2026-11-21** — gate.js extended with multilingual confirmation keywords (Tagalog, Spanish, French, Indonesian, Portuguese, German, Italian, Vietnamese, Japanese, Korean, Thai, Arabic, Hindi, Chinese) and word-boundary matching for Latin single words. E-008 unblocked. |
-| OQ-D8-002 | Should BOOKING_SUCCESS include booking reference number (booking_id)? | Nice to have — low risk. Needs CEO or PM decision. |
+| OQ-D8-002 | Should BOOKING_SUCCESS include booking reference number (booking_id)? | **RESOLVED (DEC-0013 2026-11-21)** — booking_id in every BOOKING_SUCCESS; request_id in every HUMAN_HANDOFF. |
 | OQ-D8-003 | Aria vs Max tone — should tenants be able to customise the tone guide at tenant config level (D1)? | Phase 2 — record as improvement opportunity. |

@@ -108,7 +108,16 @@ async function handleWebhook(request, env) {
   // R-002: strip JSON bleed before sending
   const cleanReply = stripJson(reply);
 
-  // Send WhatsApp text reply
+  // Send WhatsApp text reply (ponytail: TEST_MODE skips Meta call, returns reply as JSON)
+  if (env.TEST_MODE === 'true') {
+    session.messages.push({ role: 'assistant', content: cleanReply });
+    await env.KV.put(sessionKey, JSON.stringify(session), { expirationTtl: SESSION_TTL });
+    return new Response(JSON.stringify({ reply: cleanReply }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   await sendWhatsApp(customerPhone, cleanReply, tenant.phone_number_id, env.WHATSAPP_ACCESS_TOKEN);
 
   // Append assistant reply and persist session

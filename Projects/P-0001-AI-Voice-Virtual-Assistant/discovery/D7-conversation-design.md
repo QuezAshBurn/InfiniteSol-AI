@@ -147,8 +147,11 @@ BOOKING_SUCCESS
 ### BOOKING_SUCCESS
 
 **Trigger:** `book_appointment` returns `{status: "success"}`.
-**VA says:** "Great, you're booked! Your [Service] is confirmed for [Date] at [Time]. Is there anything else I can help you with?"
+**VA says:** "Great, you're booked! Your [Service] is confirmed for [Date] at [Time]. Your booking reference is [booking_id]. Add to your calendar: [calendar_url]. Is there anything else I can help you with?"
 **VA never says** this until `{status: "success"}` is returned.
+**Reference number:** Always include `booking_id` from tool result (DEC-0013).
+**Calendar link:** Always include `calendar_url` from tool result — Google Calendar "add event" link, AUD 0 (DEC-0014). OQ-D7-001 RESOLVED.
+*OQ-D7-002 RESOLVED — booking_id included in every BOOKING_SUCCESS (DEC-0013).*
 
 ---
 
@@ -166,7 +169,8 @@ BOOKING_SUCCESS
 **Trigger:** Customer requests a person; VA cannot resolve the enquiry; customer declines all slots.
 **VA says:** "No problem — I'll make sure someone from the team gets back to you. Could I get your email address?"
 **After email:** "And your phone number?"
-**After phone:** "Thank you! I've noted your details. The team will follow up with you as soon as possible. Is there anything else I can help you with for now?"
+**After phone:** "Thank you! I've noted your details. Your reference is [request_id]. The team will follow up with you as soon as possible. Is there anything else I can help you with for now?"
+**Reference number:** Always include `request_id` from `recordHandoff` result (DEC-0013).
 **If customer declines to give contact info:** "Understood — I'm sorry I couldn't be more help today. Feel free to message us again any time."
 **VA action (backend):** Call `recordHandoff` to write to `handoff_requests` D1 table (tenant PM flagged for follow-up).
 
@@ -216,5 +220,5 @@ BOOKING_SUCCESS
 
 | ID | Question | Impact |
 |---|---|---|
-| OQ-D7-001 | Should BOOKING_SUCCESS offer to send a calendar invite via WhatsApp? | Phase 2 scope — not in Phase 1. Record for improvement log. |
-| OQ-D7-002 | Should VA say the booking reference number (booking_id) in BOOKING_SUCCESS? | Low — could add value. Needs Copywriter input. |
+| OQ-D7-001 | Should BOOKING_SUCCESS offer to send a calendar invite via WhatsApp? | RESOLVED (DEC-0014 2026-11-21) — Google Calendar "add event" URL included in BOOKING_SUCCESS, Phase 1, AUD 0. |
+| OQ-D7-002 | Should VA say the booking reference number (booking_id) in BOOKING_SUCCESS? | RESOLVED (DEC-0013 2026-11-21) — booking_id included in every BOOKING_SUCCESS; request_id in every HUMAN_HANDOFF. |

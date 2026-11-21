@@ -72,7 +72,7 @@ export async function bookAppointment(args, tenantId, customerPhone, db) {
 
   // SEC-002: verify slot belongs to this tenant
   const slot = await db.prepare(
-    'SELECT slot_id, tenant_id, service_id, available FROM time_slots WHERE slot_id = ? AND tenant_id = ?'
+    'SELECT slot_id, tenant_id, service_id, available, start_datetime, end_datetime FROM time_slots WHERE slot_id = ? AND tenant_id = ?'
   ).bind(slot_id, tenantId).first();
 
   if (!slot) {
@@ -104,7 +104,16 @@ export async function bookAppointment(args, tenantId, customerPhone, db) {
     throw err;
   }
 
-  return { status: 'success', booking_id: bookingId, service_name, slot_id };
+  // "2026-11-24 09:00" → "20261124T090000" for Google Calendar URL
+  function toGcalDate(dt) {
+    const s = dt.replace(/[-: ]/g, '');
+    return `${s.slice(0, 8)}T${s.slice(8)}00`;
+  }
+  const calendar_url = `https://calendar.google.com/calendar/render?action=TEMPLATE` +
+    `&text=${encodeURIComponent(service_name)}` +
+    `&dates=${toGcalDate(slot.start_datetime)}/${toGcalDate(slot.end_datetime)}`;
+
+  return { status: 'success', booking_id: bookingId, service_name, slot_id, calendar_url };
 }
 
 // Records a human handoff request in D1
