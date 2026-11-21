@@ -8,7 +8,9 @@ import crypto from 'node:crypto';
 const BASE = 'http://localhost:8787';
 const APP_SECRET = 'local-test-secret'; // must match .dev.vars WHATSAPP_APP_SECRET
 const TENANT_T1_NUMBER = '61400000001';  // Aria — Riverside Hair Studio
-const CUSTOMER_PHONE   = '61499999001'; // synthetic customer
+// ponytail: random suffix so each run gets a fresh KV session (no stale state)
+const RUN_ID = Math.floor(Math.random() * 90000) + 10000;
+const CUSTOMER_PHONE   = `6149999${RUN_ID}`;
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -92,14 +94,14 @@ check('200 OK', r4.status === 200);
 check('Not stuck in gate loop', r4.reply.length > 10, r4.reply);
 
 console.log('\n── E-006  RAG — service info question ───────────────────────────');
-const ragPhone = '61499999002'; // fresh customer — new session
+const ragPhone = `6149998${RUN_ID}`; // fresh customer — new session
 const r5 = await send(TENANT_T1_NUMBER, ragPhone, 'Where are you located and what are your hours?');
 console.log(`  reply: ${r5.reply}`);
 check('200 OK', r5.status === 200);
 check('Mentions location or hours', /river|9am|6pm|open|mon|sat|park/i.test(r5.reply), r5.reply);
 
 console.log('\n── E-005  HUMAN_HANDOFF ─────────────────────────────────────────');
-const handoffPhone = '61499999003';
+const handoffPhone = `6149997${RUN_ID}`;
 await send(TENANT_T1_NUMBER, handoffPhone, 'I need to speak to a person');
 const r6 = await send(TENANT_T1_NUMBER, handoffPhone, 'test@example.com');
 console.log(`  reply: ${r6.reply}`);
