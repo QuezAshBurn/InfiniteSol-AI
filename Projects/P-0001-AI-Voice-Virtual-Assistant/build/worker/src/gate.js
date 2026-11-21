@@ -38,13 +38,14 @@ const CONFIRM_KEYWORDS = [
   '好的', '确认', '可以',
 ];
 
-// ponytail: \b word-boundary for single Latin/Latin-extended words prevents false positives —
-// e.g. "sige" matching inside "siguro" (Tagalog "maybe"), "sim" inside "similar", "oo" inside "noong".
-// Phrases (space) and non-Latin scripts (CJK, Arabic, Devanagari, Thai) use includes() —
-// \b only recognises [a-zA-Z0-9_] as word chars so it fails for non-ASCII scripts.
+// ponytail: lookbehind/lookahead instead of \b for Latin/Latin-extended single words.
+// \b treats accented chars (í, ì, â …) as \W so \bsí\b never fires after the accent.
+// Negative lookaround on the full Latin+Extended range catches word boundaries correctly.
+// Phrases (space) and non-Latin scripts (CJK, Arabic, Devanagari, Thai) use includes().
+const _LATIN = '[a-zA-ZÀ-ɏḀ-ỿ]';
 function matchesKeyword(text, kw) {
-  if (/^[a-zA-ZÀ-ɏḀ-ỿ]+$/.test(kw)) {
-    return new RegExp(`\\b${kw}\\b`, 'iu').test(text);
+  if (new RegExp(`^${_LATIN}+$`).test(kw)) {
+    return new RegExp(`(?<!${_LATIN})${kw}(?!${_LATIN})`, 'iu').test(text);
   }
   return text.includes(kw);
 }
